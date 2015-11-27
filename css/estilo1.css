@@ -1,0 +1,154 @@
+body {
+ width:1000px;
+ margin:0 auto;
+ height:1000px; 
+ width:80%;
+ bgproperties:fixed;
+  background-repeat: no-repeat; 
+   }  
+	 
+	 
+	 .tabela2{
+	   width:100%;
+	   float:right;
+	   top:0px;
+	   text-align:center;
+	   background-color:;
+	  
+	  }
+	.login{
+	  color:black;
+	 
+	 }
+
+	/* tamanho altura largura */ 
+.menu{
+width: 95%;
+height: 50px;
+margin-left:auto;
+margin-right:auto;
+margin-top:0;
+}	
+ 
+ 
+ /* serve para esconder o sub menu */
+.menu .menu-list{
+  list-style: none;
+}
+
+/* serve para a estetica do menu ex: mudar a cor da letra o tamanho */
+/* mudar o ponteiro do mouse deixa a letra  maiuscula, espaço, tira a listra  do link */
+.menu a{
+  color: black;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing:0.1em;
+  
+  }
+  
+  /* flutua para a esquerda */
+.menu > .menu-list > li {
+  float: left;
+ background-color:#1E90FF;
+  
+  }
+  
+   /* deixa o menu e maior ou menor pode mudar a cor do meio do menu*/
+.menu > .menu-list > li > a {
+  padding:12px;
+  margin: 10px;
+  background:white;
+  
+  }
+  
+  
+.menu > .menu-list > li:hover a {
+  background-color: white;
+}
+
+
+<!-- Remove as bolinhas do lado das listas -->
+.sidebar li {
+  list-style: none;
+ 
+  
+  }
+
+<!-- Configura os links do menu principal -->
+.menu > .menu-list > li > a {
+  padding: 20px;
+  margin: 0 5px;
+  background: red;
+}
+<!-- Configura o fundo do menu principal quando com mouse hover passando  -->
+.menu > .menu-list > li:hover a {
+  background-color: blue;
+}
+
+/* Mostra o submenu no evento de mouse hover passando ou flutuando */
+
+.menu > .menu-list > li:hover > .sub-menu {
+  display: block;
+}
+/* Configura o estilo do submenu o tamanho quando aparecer os categorias nao vai ficar pequeno vai ficar absoluto */
+.menu > .menu-list > li > .sub-menu {
+  position: absolute;
+  background: blue;
+  min-width: 200px;
+  display: none;
+}
+/* Configura os links do submenu os preenchimentos deixa o sub menu maior ou menor largura e altura */
+.menu > .menu-list > li > .sub-menu > li > a {
+	padding: 10px 20px;
+}
+
+ .tabela1{
+	   width:100%;
+	   float:left;
+	   top:0px;
+	   text-align:center;
+	
+	   }
+	 
+	   
+	   .teste{
+	    background-repeat: no-repeat;
+	 }
+	  .produtos{
+	    width:100%;
+	   float:left;
+	   top:0px;
+	   text-align:center;
+	  
+	}
+	 
+	 .produto{
+	  font-size:18%;}
+	 
+	
+     .vermelho{
+       background-color:red;
+	   }
+	 .preco{font-size:25px;
+	   color:white;
+	  height:30px;
+	  width:270%;
+	  background-color:red;
+	  top:0px;
+	 text-align:left;
+	 }
+	 
+	  section{
+	     background-color:white;}
+	   
+	   iframe{
+	    background-color:white;
+	    border:none;width:100%;height:1000px;
+		
+		}
+		
+	    
