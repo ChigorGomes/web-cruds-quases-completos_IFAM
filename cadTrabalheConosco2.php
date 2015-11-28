@@ -7,18 +7,18 @@ include('Sysweb/conexaoBd.php');
 	 $radio=$_POST['rdsexo'];
 	 $nascimento=$_POST['txtnascimento'];
 	 $escolaridade= $_POST['escolaridade'];
-	# $curriculo= $_POST['file'];
+	 $curriculo= $_POST['file'];
 	 $empresa=$_POST['txtempresa'];
 	 $cargo= $_POST['txtcargo'];
 	 $comentario=$_POST['txtcomentario'];
 	 $dataAdmissao= $_POST['txtdataadmissao'];
 	 $dataDemissao= $_POST['txtdemissao'];	
-#	$nomeFinal = time().'.pdf';
+	 $nomeFinal = time().'.pdf';
 	##if(move_uploaded_file($curriculo['tmp_name'],$nomeFinal)){
 	##	$tamanhoImg= filesize($nomeFinal);
 		
 		#$mysqlImg= addslashes(fread(fopen($nomeFinal,"r"),$tamanhoImg));
-		$sql = "INSERT INTO curriculo(NOME,EMAIL,TELEFONE,SEXO,NASCIMENTO,ESCOLARIDADE,EMPRESA,CARGO,COMENTARIO,DATAADMISSAO,DATADEMISSAO) values('$nome','$email','$telefone','$radio','$nascimento','$escolaridade','$empresa','$cargo','$comentario','$dataAdmissao','$dataDemissao')"; 
+		$sql = "INSERT INTO curriculo(NOME,EMAIL,TELEFONE,SEXO,NASCIMENTO,ESCOLARIDADE,CURRICULO,EMPRESA,CARGO,COMENTARIO,DATAADMISSAO,DATADEMISSAO) values('$nome','$email','$telefone','$radio','$nascimento','$escolaridade','$curriculo','$empresa','$cargo','$comentario','$dataAdmissao','$dataDemissao')"; 
 		$insere = $conn->query($sql);
 	##}
 		

@@ -2,7 +2,6 @@
 <head>
     <meta charset = "utf-8">
     <title> Consulta de Produtos </title>
-    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
     <style>
         img#image{
             width: 100px;
@@ -30,13 +29,13 @@
     <p class = "tabela"> <strong ><h2>Produtos Cadastrados</h2> </strong> </p>
     <table  class = "tableconsulta">
         <tr>
-            <td class = "cliente"> Código </td>
-            <td class = "cliente"> Nome </td>
-            <td class = "cliente"> Descrição </td>
-            <td class = "cliente"> Categoria </td>
-            <td class = "cliente"> Preço (R$)</td>
-            <td class = "cliente"> Imagem </td>
-            <td class = "cliente"> Proceso</td>
+            <td> Código </td>
+            <td> Nome </td>
+            <td> Descrição </td>
+            <td> Categoria </td>
+            <td> Preço (R$)</td>
+            <td> Imagem </td>
+            <td> Proceso</td>
         </tr>
         <br><br>
         <?php
@@ -57,9 +56,13 @@
             if($stmt){
                 foreach($stmt as $usr){
                     echo "<tr>";
-                    echo "<td>".$usr["codigo"]." </td><td>".$usr["nome"]." </td><td>".$usr["descricao"]."</td> <td>".$usr["CATEGORIA"]."</td> <td>".$usr["preco"]."</td>";
+                    echo "<td>".$usr["codigo"]." </td>
+                    <td>".$usr["nome"]." </td>
+                    <td>".$usr["descricao"]."</td> 
+                    <td>".$usr["CATEGORIA"]."</td>
+                     <td>".$usr["preco"]."</td>";
                     echo "<td>";
-                    echo "<img id ='image' src='".$usr["imagem"]."'/>";
+                    echo "<img id ='image' src=".$usr["imagem"]."/>";
                     echo  "</td>";
                     echo "<td>";
                     echo "<a href = 'formeditarproduto.php?idCodigo=".$usr["idCodigo"]."'> Alterar </a>";

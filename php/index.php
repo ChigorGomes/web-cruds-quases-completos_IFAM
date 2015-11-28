@@ -47,8 +47,6 @@
 	  </li>
 	<li><a href="#">categoria</a>
     <ul class="sub-menu">
-	    <li><a href="brinquedos.php"  target="ligar">meninos</a></li>
-        <li><a href="meninas.php" target="ligar">Meninas</a></li>
         <li><a href="bicicleta.php" target="ligar">Bicicletas e Triciclos</a></li>
         <li><a href="eletronicos.php" target="ligar">Eletrônicos</a></li>
       </ul>

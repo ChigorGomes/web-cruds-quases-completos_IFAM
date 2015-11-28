@@ -18,7 +18,12 @@
 		</tr>
 		<tr>
 			<td>
-				<a href="../Sysweb/FormConsultaCategoria.php">Consulta Categoria</a>
+				<a href="../cadCadastroCategoria.php">Cadastra Categoria</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="../consultaCategoria.php">Consulta Categoria</a>
 			</td>
 		</tr>	
 		<tr>

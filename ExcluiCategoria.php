@@ -3,15 +3,15 @@ include("Sysweb/conexaoBd.php");
 try{
 	$conn-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
-	$idcliente= $_GET["idCodigo"];
+	$idcategoria= $_GET["id_categoria"];
     
-	$sql="DELETE FROM produtos WHERE idCodigo= $idcliente";
+	$sql="DELETE FROM  categoria WHERE id_categoria= $idcategoria";
 	
 	$insere=$conn->query($sql);
 	
 	if($insere){
 		echo"<script> alert('Exclusao efetuada com sucesso!');
-		window.open('consultarproduto.php','_self')</script>";
+		window.open('consultaCategoria.php','_self')</script>";
 		
 	}
   }catch(Exception $e){
