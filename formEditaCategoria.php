@@ -1,17 +1,15 @@
 <?php
-include("conexaoBD.php");
+include("Sysweb/conexaoBd.php");
 try{
 	$conn-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
 	
-	$idAdministrador = $_POST["txtidAdministrador"];
+	$idCategoria = $_POST["txtidCategoria"];
 	$nome  = $_POST["txtnome"];
-	$login =$_POST["txtlogin"];
-	$senha =$_POST["txtsenha"];
 	
 
-	$sql= "UPDATE administrador SET nome = '$nome',login='$login',senha='$senha'
-	WHERE id_Administrador = $idAdministrador";
+	$sql= "UPDATE categoria SET CATEGORIA = '$nome'
+	WHERE id_categoria = $idCategoria";
 	
 	// executando sql
 	$insere= $conn-> query($sql);
@@ -20,7 +18,7 @@ try{
 	
 	if($insere){
 		echo"<script>alert('alteração efetuada com sucesso!');
-		window.open('formConsultaAdministrador.php','_self')</script>";
+		window.open('consultaCategoria.php','_self')</script>";
 		}
 } catch(Exception $e){
 	echo "Erro". $e->getMessage();

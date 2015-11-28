@@ -7,6 +7,7 @@
 <body>
 	<form action="CadastroCategoria.php" method="post">
 		<table>
+		<a href="administrador/area_Administrador.php">Voltar página anterior</a>
 			<tr>
 				<td>
 					<label>Categoria</label>

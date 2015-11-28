@@ -11,7 +11,7 @@ try{
 	
 	if($insere){
 		echo"<script> alert('Exclusao efetuada com sucesso!');
-		window.open('ForConsultaCliente.php','_self')</script>";
+		window.open('formConsultaCurriculo.php','_self')</script>";
 		
 	}
   }catch(Exception $e){
