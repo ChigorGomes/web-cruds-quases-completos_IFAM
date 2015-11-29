@@ -44,7 +44,7 @@
 					echo "<tr>";
 					echo "<td>";
 					echo "<a href = 'teste2.php?idCodigo=".$usr["idCodigo"]."'>";
-                     echo "<img id ='image' src=".$usr["imagem"]."/>";
+                     echo "<img id ='image' src=".$usr["imagem"].">";
                     echo "</td>";
                     echo  "<td>".$usr["nome"]. "</td>";
                     echo "<td>".$usr["preco"]."</td>";
