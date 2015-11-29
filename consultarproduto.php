@@ -3,9 +3,9 @@
     <meta charset = "utf-8">
     <title> Consulta de Produtos </title>
     <style>
-        img#image{
+        #image{
             width: 100px;
-            height: 50px;
+            height: 90px;
         }
 
     </style>
@@ -13,7 +13,6 @@
 
 <body>
 <form method = "post" action = "consultarproduto.php">
-    <br><br><br><br><br><br><br><br>
     <a href="administrador/area_Administrador.php" class="menu"> <b> Voltar a página Anterior </b> </a>
     <table class = "tableforma">
         <tr>
@@ -37,7 +36,7 @@
             <td> Imagem </td>
             <td> Proceso</td>
         </tr>
-        <br><br>
+        
         <?php
 
         include ("Sysweb/conexaoBd.php");
@@ -62,7 +61,7 @@
                     <td>".$usr["CATEGORIA"]."</td>
                      <td>".$usr["preco"]."</td>";
                     echo "<td>";
-                    echo "<img id ='image' src=".$usr["imagem"]."/>";
+                    echo "<img src=".$usr["imagem"]." id ='image'>";
                     echo  "</td>";
                     echo "<td>";
                     echo "<a href = 'formeditarproduto.php?idCodigo=".$usr["idCodigo"]."'> Alterar </a>";

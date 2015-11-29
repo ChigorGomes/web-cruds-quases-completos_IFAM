@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <a href="../administrador/area_Administrador.php">Voltar página anterior</a>
 <form action ="formConsultaCurriculo.php" method="post">
 <table align="center">

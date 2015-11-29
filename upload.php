@@ -1,13 +1,12 @@
 ﻿<!DOCTYPE>
 <html>
 <head>
-    <meta charset=utf-8" />
+    <meta charset='utf-8'>
     <title>Upload</title>
 </head>
 
 <body>
 
-<br/><br/><br/><br/>
 
 <?php
 include ("Sysweb/conexaoBd.php");
@@ -66,7 +65,7 @@ try{
     $preco = $_POST["txtPreco"];
     $imagem = $destino;
 
-    $sql = "INSERT INTO produtos VALUES(0,'$codigo', '$nome','$descricao','$categoria','$preco','$imagem')";
+    $sql = "INSERT INTO produtos(codigo,nome,descricao,CATEGORIA,preco,imagem) VALUES('$codigo', '$nome','$descricao','$categoria','$preco','$imagem')";
 
     $insere = $conn->query($sql);
 

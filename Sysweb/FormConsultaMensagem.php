@@ -3,6 +3,7 @@ function deletaMensagem(){
 	return confirm("deseja realmente excluir");
 }
 </script>
+<meta charset="utf-8">
 <a href="../administrador/area_Administrador.php">Voltar página anterior</a>
 <form action ="formConsultaMensagem.php" method="post">
 <table align="center">

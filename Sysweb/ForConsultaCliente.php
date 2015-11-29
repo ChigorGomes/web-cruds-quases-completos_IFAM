@@ -3,6 +3,7 @@ function deletaCliente(){
 	return confirm("deseja realmente excluir");
 }
 </script>
+<meta charset="utf-8">
 <a href="../administrador/area_Administrador.php">Voltar página anterior</a>
 	  
 
